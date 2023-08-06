@@ -3,7 +3,7 @@ from .models import User, UserProfile
 from .validators import allow_only_images_validator
 
 class UserForm(forms.ModelForm):
-    address = forms.CharField(widget=forms.TextInput(attrs={'placeholder':'start typing...','required':'required'})) 
+    #address = forms.CharField(widget=forms.TextInput(attrs={'placeholder':'start typing...','required':'required'})) 
     password = forms.CharField(widget=forms.PasswordInput())
     confirm_password = forms.CharField(widget=forms.PasswordInput())
     
